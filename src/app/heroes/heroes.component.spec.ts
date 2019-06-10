@@ -30,7 +30,6 @@ describe('HeroesComponent', () => {
         });
     });
 
-
     describe('should call deleteHero', () => {
         it('should call deleteHero', () => {
             component.heroes = HEROES;
