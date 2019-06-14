@@ -50,10 +50,6 @@ describe('HeroesComponent (deep tests)', () => {
         for (let index = 0; index < heroComponentsDEs.length; index++) {
             expect(heroComponentsDEs[index].componentInstance.hero).toEqual(HEROES[index]);
         }
-
-
        
-       //expect(heroComponentsDEs[1].componentInstance.hero.name).toEqual('Wonderful Woman');
-       //expect(heroComponentsDEs[2].componentInstance.hero.name).toEqual('SuperDude');
     });
 });
