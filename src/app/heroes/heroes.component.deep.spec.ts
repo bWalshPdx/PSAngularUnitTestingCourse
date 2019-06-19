@@ -67,8 +67,12 @@ describe('HeroesComponent (deep tests)', () => {
             // heroComponents[0].query(By.css('button'))
             // .triggerEventHandler('click', {stopPropagation: () => {}});
 
-            (heroComponents[0].componentInstance).delete.emit(undefined);
+            //(heroComponents[0].componentInstance).delete.emit(undefined);
             
+            //expect(fixture.componentInstance.delete).toHaveBeenCalledWith(HEROES[0]);
+
+            heroComponents[0].triggerEventHandler('delete', null);
+
             expect(fixture.componentInstance.delete).toHaveBeenCalledWith(HEROES[0]);
         });
 
